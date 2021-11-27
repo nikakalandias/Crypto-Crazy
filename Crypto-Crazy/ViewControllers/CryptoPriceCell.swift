@@ -10,6 +10,8 @@ import UIKit
 class CryptoPriceCell: UITableViewCell {
 
     @IBOutlet weak var price: UILabel!
+    @IBOutlet weak var imageBitcoin: UIImageView!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

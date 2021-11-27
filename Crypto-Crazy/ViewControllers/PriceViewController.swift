@@ -8,24 +8,27 @@
 import UIKit
 
 class PriceViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
-    @IBOutlet weak var CryptoTableView: UITableView!
+    
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        CryptoTableView.delegate = self
-        CryptoTableView.dataSource = self
+        
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 5
     }
     
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = CryptoTableView.dequeueReusableCell(withIdentifier: "CryptoCell", for: indexPath) as! CryptoPriceCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CryptoCell", for: indexPath) as! CryptoPriceCell
         return cell
     }
+    
+    
 
 
 }

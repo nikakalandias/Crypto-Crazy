@@ -60,17 +60,49 @@
 		0BCDD974275241AC000FCE56 /* Crypto-Crazy */ = {
 			isa = PBXGroup;
 			children = (
-				0BCDD975275241AC000FCE56 /* AppDelegate.swift */,
-				0BCDD977275241AC000FCE56 /* SceneDelegate.swift */,
-				0BCDD979275241AC000FCE56 /* MainViewController.swift */,
-				0BCDD98F275258D8000FCE56 /* PriceViewController.swift */,
-				0BCDD98B27525621000FCE56 /* CryptoPriceCell.swift */,
+				0BCDD9932752731F000FCE56 /* Service */,
+				0BCDD99227527318000FCE56 /* Model */,
+				0BCDD99427527333000FCE56 /* ViewModel */,
+				0BCDD991275272D1000FCE56 /* ViewControllers */,
 				0BCDD97B275241AC000FCE56 /* Main.storyboard */,
 				0BCDD97E275241B1000FCE56 /* Assets.xcassets */,
 				0BCDD980275241B1000FCE56 /* LaunchScreen.storyboard */,
 				0BCDD983275241B1000FCE56 /* Info.plist */,
 			);
 			path = "Crypto-Crazy";
+			sourceTree = "<group>";
+		};
+		0BCDD991275272D1000FCE56 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0BCDD975275241AC000FCE56 /* AppDelegate.swift */,
+				0BCDD977275241AC000FCE56 /* SceneDelegate.swift */,
+				0BCDD979275241AC000FCE56 /* MainViewController.swift */,
+				0BCDD98F275258D8000FCE56 /* PriceViewController.swift */,
+				0BCDD98B27525621000FCE56 /* CryptoPriceCell.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0BCDD99227527318000FCE56 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0BCDD9932752731F000FCE56 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		0BCDD99427527333000FCE56 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
