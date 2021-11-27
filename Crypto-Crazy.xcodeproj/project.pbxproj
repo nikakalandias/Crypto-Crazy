@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		0BCDD976275241AC000FCE56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCDD975275241AC000FCE56 /* AppDelegate.swift */; };
 		0BCDD978275241AC000FCE56 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCDD977275241AC000FCE56 /* SceneDelegate.swift */; };
-		0BCDD97A275241AC000FCE56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCDD979275241AC000FCE56 /* ViewController.swift */; };
+		0BCDD97A275241AC000FCE56 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCDD979275241AC000FCE56 /* MainViewController.swift */; };
 		0BCDD97D275241AC000FCE56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BCDD97B275241AC000FCE56 /* Main.storyboard */; };
 		0BCDD97F275241B1000FCE56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BCDD97E275241B1000FCE56 /* Assets.xcassets */; };
 		0BCDD982275241B1000FCE56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BCDD980275241B1000FCE56 /* LaunchScreen.storyboard */; };
+		0BCDD98C27525621000FCE56 /* CryptoPriceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCDD98B27525621000FCE56 /* CryptoPriceCell.swift */; };
+		0BCDD990275258D8000FCE56 /* PriceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCDD98F275258D8000FCE56 /* PriceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0BCDD972275241AC000FCE56 /* Crypto-Crazy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crypto-Crazy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BCDD975275241AC000FCE56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BCDD977275241AC000FCE56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0BCDD979275241AC000FCE56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0BCDD979275241AC000FCE56 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0BCDD97C275241AC000FCE56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0BCDD97E275241B1000FCE56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BCDD981275241B1000FCE56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0BCDD983275241B1000FCE56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BCDD98B27525621000FCE56 /* CryptoPriceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoPriceCell.swift; sourceTree = "<group>"; };
+		0BCDD98F275258D8000FCE56 /* PriceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,9 @@
 			children = (
 				0BCDD975275241AC000FCE56 /* AppDelegate.swift */,
 				0BCDD977275241AC000FCE56 /* SceneDelegate.swift */,
-				0BCDD979275241AC000FCE56 /* ViewController.swift */,
+				0BCDD979275241AC000FCE56 /* MainViewController.swift */,
+				0BCDD98F275258D8000FCE56 /* PriceViewController.swift */,
+				0BCDD98B27525621000FCE56 /* CryptoPriceCell.swift */,
 				0BCDD97B275241AC000FCE56 /* Main.storyboard */,
 				0BCDD97E275241B1000FCE56 /* Assets.xcassets */,
 				0BCDD980275241B1000FCE56 /* LaunchScreen.storyboard */,
@@ -138,9 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BCDD97A275241AC000FCE56 /* ViewController.swift in Sources */,
+				0BCDD98C27525621000FCE56 /* CryptoPriceCell.swift in Sources */,
+				0BCDD97A275241AC000FCE56 /* MainViewController.swift in Sources */,
 				0BCDD976275241AC000FCE56 /* AppDelegate.swift in Sources */,
 				0BCDD978275241AC000FCE56 /* SceneDelegate.swift in Sources */,
+				0BCDD990275258D8000FCE56 /* PriceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +300,7 @@
 				DEVELOPMENT_TEAM = 6MDNH2KL39;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Crypto-Crazy/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Crypto Crazy";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -320,6 +329,7 @@
 				DEVELOPMENT_TEAM = 6MDNH2KL39;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Crypto-Crazy/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Crypto Crazy";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
