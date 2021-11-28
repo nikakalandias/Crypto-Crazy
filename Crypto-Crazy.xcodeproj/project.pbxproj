@@ -15,6 +15,8 @@
 		0BCDD982275241B1000FCE56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BCDD980275241B1000FCE56 /* LaunchScreen.storyboard */; };
 		0BCDD98C27525621000FCE56 /* CryptoPriceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCDD98B27525621000FCE56 /* CryptoPriceCell.swift */; };
 		0BCDD990275258D8000FCE56 /* PriceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCDD98F275258D8000FCE56 /* PriceViewController.swift */; };
+		0BCEE9D82753CB9C0094AFDD /* CryptoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCEE9D72753CB9C0094AFDD /* CryptoModel.swift */; };
+		0BCEE9DA2753DC000094AFDD /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCEE9D92753DC000094AFDD /* WebService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		0BCDD983275241B1000FCE56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BCDD98B27525621000FCE56 /* CryptoPriceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoPriceCell.swift; sourceTree = "<group>"; };
 		0BCDD98F275258D8000FCE56 /* PriceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceViewController.swift; sourceTree = "<group>"; };
+		0BCEE9D72753CB9C0094AFDD /* CryptoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoModel.swift; sourceTree = "<group>"; };
+		0BCEE9D92753DC000094AFDD /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,7 @@
 		0BCDD99227527318000FCE56 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0BCEE9D72753CB9C0094AFDD /* CryptoModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -94,6 +99,7 @@
 		0BCDD9932752731F000FCE56 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				0BCEE9D92753DC000094AFDD /* WebService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -176,7 +182,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BCEE9D82753CB9C0094AFDD /* CryptoModel.swift in Sources */,
 				0BCDD98C27525621000FCE56 /* CryptoPriceCell.swift in Sources */,
+				0BCEE9DA2753DC000094AFDD /* WebService.swift in Sources */,
 				0BCDD97A275241AC000FCE56 /* MainViewController.swift in Sources */,
 				0BCDD976275241AC000FCE56 /* AppDelegate.swift in Sources */,
 				0BCDD978275241AC000FCE56 /* SceneDelegate.swift in Sources */,
