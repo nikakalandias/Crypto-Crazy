@@ -7,9 +7,25 @@
 
 import Foundation
 
-struct cryptoModel : Decodable {
+struct CryptoTotalData : Decodable {
     
-    let currency : String
-    let price : String
+    let data : [CryptoModel]
+}
+
+struct CryptoModel : Decodable {
     
+    let name : String
+    let values : Values
+    
+}
+
+struct UsdValues : Decodable {
+    
+    let price : Double
+    
+}
+
+struct Values : Decodable {
+    
+    let usd : UsdValues
 }
