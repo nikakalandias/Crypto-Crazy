@@ -18,9 +18,7 @@ class WebService{
                 completion(nil)
                 
             }else if let data = data {
-                print(data)
                 let cryptoList = try? JSONDecoder().decode(CryptoTotalData.self, from: data)
-                print(cryptoList ?? "AA")
                 completion(cryptoList)
             }
             

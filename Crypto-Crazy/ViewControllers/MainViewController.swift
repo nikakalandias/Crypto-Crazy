@@ -17,7 +17,7 @@ class MainViewController: UIViewController {
         
         WebService().getData(url: url) { (cryptoCurr) in
             if let cryptoCurr = cryptoCurr {
-                print(cryptoCurr)
+                
             }
         }
         

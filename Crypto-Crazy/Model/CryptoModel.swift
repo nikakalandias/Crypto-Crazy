@@ -27,5 +27,5 @@ struct UsdValues : Decodable {
 
 struct Values : Decodable {
     
-    let usd : UsdValues
+    let USD : UsdValues
 }
