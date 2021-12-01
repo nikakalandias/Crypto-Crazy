@@ -13,13 +13,7 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         
-        let url = URL(string: "https://api.cryptorank.io/v1/currencies?api_key=e726827423f7d0be30befe4c1a1f70ddb24cb36aea463a02e96a829c6110")!
-        
-        WebService().getData(url: url) { (cryptoCurr) in
-            if let cryptoCurr = cryptoCurr {
-                
-            }
-        }
+
         
         super.viewDidLoad()
         buttonOutlet.layer.cornerRadius = 17
@@ -27,9 +21,13 @@ class MainViewController: UIViewController {
         
         
     }
+    
+
 
     @IBAction func buttonClicked(_ sender: Any) {
+
         performSegue(withIdentifier: "toPriceVC", sender: nil)
+        
     }
     
 }

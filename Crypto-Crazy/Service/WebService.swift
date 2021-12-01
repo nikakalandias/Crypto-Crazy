@@ -9,7 +9,7 @@ import Foundation
 
 class WebService{
     
-    func getData(url: URL, completion: @escaping (CryptoTotalData?) -> ()) {
+    func getData(url: URL, completion: @escaping ([CryptoCurrency]?) -> ()) {
         
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             
@@ -18,7 +18,7 @@ class WebService{
                 completion(nil)
                 
             }else if let data = data {
-                let cryptoList = try? JSONDecoder().decode(CryptoTotalData.self, from: data)
+                let cryptoList = try? JSONDecoder().decode([CryptoCurrency].self, from: data)
                 completion(cryptoList)
             }
             

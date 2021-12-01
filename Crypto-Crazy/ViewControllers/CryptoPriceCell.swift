@@ -9,6 +9,7 @@ import UIKit
 
 class CryptoPriceCell: UITableViewCell {
 
+    @IBOutlet weak var currency: UILabel!
     @IBOutlet weak var price: UILabel!
     @IBOutlet weak var imageBitcoin: UIImageView!
     
